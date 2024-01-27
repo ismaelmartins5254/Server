@@ -137,6 +137,6 @@ app.delete("/deletSetor", (req, res) => { // Toda a requisição front está no 
 
 
 
-app.listen(5000, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log('servidor rodando')
 })
