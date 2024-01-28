@@ -8,9 +8,6 @@ app.use(express.json())
 
 
 
-app.get('/',(res)=>{
-  res.send('hello world')
-})
 app.post(`/addIten`, (req, res) => { //requisição para postar os itens que fica no arquivo Additen.jsx
   const { name } = req.body
   const { description } = req.body
